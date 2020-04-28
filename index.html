@@ -15,11 +15,17 @@
 <body>
     <h3>Hello world from web components!</h3>
     </br>
-    <user-card name="Donald Duck" avatar="https://randomuser.me/api/portraits/men/2.jpg"></user-card>
-    <user-card name="Jane" avatar="https://randomuser.me/api/portraits/women/2.jpg"></user-card>
+    <user-card name="Donald Duck" avatar="https://randomuser.me/api/portraits/men/2.jpg">
+        <div slot="email">donaldduck@gmail.com</div>
+        <div slot="phone">+49 812 1231 823</div>
+
+    </user-card>
+    <user-card name="Jane" avatar="https://randomuser.me/api/portraits/women/2.jpg">
+        <div slot="email">jane@gmail.com</div>
+        <div slot="phone">+49 1231 22331 823</div>
+    </user-card>
 
 </body>
 <script src="./index.js"></script>
-
 
 </html>
