@@ -56,6 +56,10 @@ class UserCard extends HTMLElement {
       .querySelector("#toggle-info")
       .addEventListener("click", () => this.toogleInfo());
   }
+
+  disconnectedCallback() {
+    this.shadowRoot.querySelector("#toggle-info").removeEventListener();
+  }
 }
 
 window.customElements.define("user-card", UserCard);
