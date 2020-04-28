@@ -2,8 +2,8 @@ const template = document.createElement("template");
 template.innerHTML = `
     <style>h3 { color: coral }</style>
     <div class="user-card">
-        <h3></h3>
-        <img></img>
+    <img />
+       <div><h3></h3></div>
     </div>
 `;
 
